@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26.04.2019, 11:08:52
+    Author     : Репин.Сергей
+*/
+.myheader {
+    background-color: rgb(67, 145, 165);
+    width: 100%;
+    height: 40px;
+}
+
+.container{
+    height: 50px;
+}
+
+.titlebox{
+    height: 15vh;
+    
+}
+
+.title {
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+    top: 5vh;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+        
+}
+
+.btn.btn-success {
+  color: #fff;
+  background-color: rgb(67, 145, 165);
+  border-color: rgb(67, 145, 165);
+}
+.btn.btn-success.focus,
+.btn.btn-success:focus {
+  color: #fff;
+  background-color: rgb(67, 145, 165);
+  border-color: rgb(67, 145, 165);
+  outline: none;
+  box-shadow: none;
+}
+.btn.btn-success:hover {
+  color: #fff;
+  background-color: rgb(67, 145, 165);
+  border-color: rgb(67, 145, 165);
+  outline: none;
+  box-shadow: none;
+}
+.btn.btn-success.active,
+.btn.btn-success:active {
+  color: #fff;
+  background-color: rgb(67, 145, 165);
+  border-color: rgb(67, 145, 165);
+  outline: none;
+}
+.btn.btn-success.active.focus,
+.btn.btn-success.active:focus,
+.btn.btn-success.active:hover,
+.btn.btn-success:active.focus,
+.btn.btn-success:active:focus,
+.btn.btn-success:active:hover {
+  color: #fff;
+  background-color: rgb(67, 145, 190);
+  border-color: rgb(67, 145, 190);
+  outline: none;
+  box-shadow: none;
+}
+
+.btn.btn-success.disabled,
+.btn.btn-success:disabled {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+  outline: none;
+}
+
+.btn.btn-success.disabled.focus,
+.btn.btn-success.disabled:focus,
+.btn.btn-success.disabled:hover,
+.btn.btn-success:disabled.focus,
+.btn.btn-success:disabled:focus,
+.btn.btn-success:disabled:hover {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+  outline: none;
+  box-shadow: none;
+}
