@@ -7,6 +7,18 @@ and open the template in the editor.
     Created on : 26.04.2019, 11:08:52
     Author     : Репин.Сергей
 */
+.formbox {
+    height: 300px;
+    background-color: gray;
+    position: relative;
+    top: 40vh;
+    vertical-align: bottom;
+}
+
+.formbox button {
+    position: relative;
+    top: 45vh;
+}
 .myheader {
     background-color: rgb(67, 145, 165);
     width: 100%;

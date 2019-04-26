@@ -3,7 +3,8 @@
 // * To change this template file, choose Tools | Templates
 // * and open the template in the editor.
 // */
-var is_hide = false;
+'use strict';
+var is_hide = true;
 $(document).ready(function(){
     $('<header class = "myheader"></header>').insertBefore('body');
     $('body').prepend('<div class = "container"></div>');
@@ -20,16 +21,34 @@ btn-block">Block level button</button>');
     $('body').prepend('<div class = "titlebox"></div>');
     $('.titlebox').append('<div class = "title"></div>');
     $('.title').text("It 's the titlebox");
+    $('body').append('<div class = "formbox"></div>');
+    $('.formbox').append('<button type="button" class="btn btn-success btn-md">\n\
+Block level button</button>');
+    $('.formbox').hide();
 //    $('#btn3 button').prop("disabled",true)
 //    $('#btn1 button').prop("disabled",false)
-   // $('.container row')prop("display", "none");
     $('#btn1 button').click(function(){
-            is_hide ? is_hide = false:is_hide= true;
-            console.log(is_hide);
-            if(is_hide){
-                $('.title').show();
-            }else {
-                $('.title').hide();
-            }
+            hideButtons();
+            showFormBox();
+    });
+    $('.formbox button').click(function(){
+            showButtons();
+            hideFormBox();
     });
 });
+
+function hideButtons(){
+    $('.row').hide();
+}
+
+function showButtons() {
+    $('.row').show();
+}
+
+function showFormBox() {
+    $('.formbox').show();
+}
+
+function hideFormBox() {
+    $('.formbox').hide();
+}
