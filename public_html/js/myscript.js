@@ -24,7 +24,7 @@ $(document).ready(function(){
     $('body').append('<div class = "formbox"></div>');
     $('.formbox').after('<div class = "underform"></div>');
     $('.underform').append('<button type="button" class="btn btn-success btn-md">\n\
-    Block level button</button>');
+    Back to list</button>');
     $('.underform').hide();
     $('.formbox').hide();
     $('.underform button').click(function(){
@@ -50,9 +50,33 @@ $(document).ready(function(){
             selectedDate, instance.settings);
             dates.not(this).datepicker("option", option, date);
             }
+        
+        });
+        $('p').append('<label for="to">Выберите компанию:</label> <select></select>');
+        $("select").combobox();
+    });
+    
+    
+    $('#btn3 button').click(function(){
+        hideButtons();
+        showFormBox();
+        $('.formbox').prepend('<p></p>');
+        $('p').append('<label for="from">дата:</label> <input type="text" id="from" name="from"/>');
+        var dates = $("#from").datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 1,
+        onSelect: function(selectedDate){
+            var option = "selectedDate",
+            instance = $( this ).data( "datepicker" ),
+            date = $.datepicker.parseDate(
+            instance.settings.dateFormat || $.datepicker._defaults.dateFormat,
+            selectedDate, instance.settings);
+            dates.not(this).datepicker("option", option, date);
+            }
         });            
     });
-  
+    
     
   });
 

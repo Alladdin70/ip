@@ -10,7 +10,7 @@ and open the template in the editor.
 .formbox {
     position: relative;
     top: 40vh;
-    left: 40%;
+    left: 0%;
     vertical-align: bottom;
     align-content: center;
 }
