@@ -8,16 +8,18 @@ and open the template in the editor.
     Author     : Репин.Сергей
 */
 .formbox {
-    height: 300px;
-    background-color: gray;
     position: relative;
     top: 40vh;
+    left: 40%;
     vertical-align: bottom;
+    align-content: center;
 }
 
-.formbox button {
+.underform button {
     position: relative;
-    top: 45vh;
+    
+    top:  50vh;
+    left: 80vw;
 }
 .myheader {
     background-color: rgb(67, 145, 165);
@@ -105,3 +107,4 @@ and open the template in the editor.
   outline: none;
   box-shadow: none;
 }
+
